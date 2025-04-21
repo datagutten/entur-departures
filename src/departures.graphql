@@ -1,0 +1,27 @@
+{
+          quay(
+            id: "%s"
+          ) {
+            id
+            estimatedCalls(
+              whiteListed: {
+                lines: "%s"
+              },
+              numberOfDepartures: %d
+            ) {
+      expectedDepartureTime
+      destinationDisplay {
+        frontText
+      }
+      serviceJourney {
+        publicCode
+        journeyPattern {
+          line {
+            publicCode
+          }
+        }
+      }
+    }
+    description
+  }
+}
